@@ -1,0 +1,33 @@
+SERENA – MVP ACADÉMICO PA2
+==========================
+Esta carpeta contiene una tienda web de demostración (HTML5, CSS3 y JavaScript), inspirada en los 7 diseños de Figma de SERENA y alineada con su PA1.
+
+ARCHIVOS:
+- index.html = estructura del sitio y rutas
+- style.css = diseño adaptable a celular
+- script.js = datos de productos, filtros, carrito y flujo de compra simulado
+- assets/ = imágenes tomadas de las pantallas PNG proporcionadas por la autora
+
+PRUEBA EN TU COMPUTADORA:
+1. Descomprime el ZIP.
+2. Abre index.html en Chrome o Safari.
+3. Prueba Catálogo > agregar al carrito > Carrito > Datos de envío > Método de pago > Confirmar pedido de prueba.
+4. No uses datos reales. La tienda no procesa pagos ni hace envíos.
+
+PUBLICAR EN GITHUB PAGES:
+1. Inicia sesión en github.com y crea un repositorio PÚBLICO llamado serena-pa2.
+2. En el repositorio elige Add file > Upload files.
+3. Sube index.html, style.css, script.js y toda la carpeta assets (con sus imágenes). Conserva la estructura.
+4. Confirma la carga con Commit changes.
+5. Ve a Settings > Pages > Build and deployment. Source = Deploy from a branch. Branch = main, carpeta /(root). Pulsa Save.
+6. Espera a que aparezca la URL pública, normalmente https://TU-USUARIO.github.io/serena-pa2/.
+7. Abre esa URL desde tu celular y revisa que carguen las imágenes y los botones.
+8. Para el PDF final, incluye la URL real del repositorio y la URL real publicada, no una URL de ejemplo.
+
+AVISOS IMPORTANTES:
+- La compra es simulada. No hay pasarela de pago integrada, cobro, pedido real ni correo de confirmación.
+- El botón de WhatsApp no tiene número empresarial definido. Se abre un mensaje para compartir; no hay atención real configurada.
+- Los precios son los que aparecen en la pantalla de catálogo enviada, salvo costos de envío de demostración (S/12 estándar; S/0 recojo).
+- Las fórmulas y declaraciones de productos, especialmente el SPF, son conceptuales y requieren validación técnica/sanitaria.
+- La auditoría móvil exige pruebas reales desde un teléfono; no inventar hallazgos.
+- Para la memoria estratégica de PA2 faltan análisis de dropshipping, pagos, logística y tres tácticas móviles.
