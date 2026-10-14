@@ -18,7 +18,19 @@
   </header>
   <main id="app" tabindex="-1"></main>
   <footer class="footer"><div><strong>SERENA</strong><span>Belleza natural que cuida de ti.</span></div><p>Proyecto integrador académico · Modelo B2C · Productos y formulaciones conceptuales sujetos a validación técnica y sanitaria.</p><p>© 2026 SERENA · Demostración educativa</p></footer>
-  <a class="whatsapp" href="https://wa.me/?text=Hola%2C%20quisiera%20asesor%C3%ADa%20sobre%20los%20productos%20de%20SERENA" target="_blank" rel="noopener noreferrer" aria-label="Compartir consulta de SERENA por WhatsApp" title="Abrir WhatsApp (sin número oficial configurado)">✆ <span>Asesoría</span></a>
+  <button class="whatsapp" type="button" id="adviceOpen" aria-label="Abrir opciones de asesoría móvil">✆ <span>Asesoría</span></button>
+  <div id="adviceDialog" class="advice-overlay" hidden>
+    <div class="advice-card" role="dialog" aria-modal="true" aria-labelledby="adviceTitle">
+      <button type="button" class="advice-close" id="adviceClose" aria-label="Cerrar">×</button>
+      <p class="eyebrow">Asesoría móvil · Demostración</p>
+      <h2 id="adviceTitle">¿Necesitas orientación?</h2>
+      <p>Preparamos una consulta sobre los productos SERENA para compartir desde WhatsApp.</p>
+      <p class="advice-message" id="adviceMessage">Hola, estoy explorando SERENA y quisiera orientación sobre tonos e ingredientes de un producto.</p>
+      <a class="btn w-full" target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?text=Hola%2C%20estoy%20explorando%20SERENA%20y%20quisiera%20orientaci%C3%B3n%20sobre%20tonos%20e%20ingredientes%20de%20un%20producto.">ABRIR WHATSAPP →</a>
+      <button class="btn secondary w-full" type="button" id="copyAdvice">COPIAR MENSAJE</button>
+      <p class="disclaimer">Prueba académica: aún no hay un número oficial de WhatsApp Business de SERENA; al abrir WhatsApp tendrás que elegir un destinatario. No se envía ningún mensaje automáticamente.</p>
+    </div>
+  </div>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 </body>
 </html>

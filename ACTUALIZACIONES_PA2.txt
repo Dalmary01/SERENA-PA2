@@ -1,0 +1,15 @@
+SERENA PA2 – Actualización de tácticas móviles
+
+1. Asesoría móvil: panel desde botón flotante, mensaje copiable y apertura de WhatsApp en modo compartir. Sin número comercial oficial de SERENA, no hay contacto directo implementado.
+2. Personalización local: selector de tres zonas en Datos de envío, cotizaciones DEMOSTRATIVAS Lima Metropolitana S/12, Callao S/15, otras ciudades S/25. Costo total se actualiza en checkout y confirmación. No son tarifas comerciales ni estimaciones verificadas.
+3. QR de campaña: código escaneable enlazado a https://dalmary01.github.io/SERENA-PA2/#catalogo; visible en Inicio y como arte descargable SERENA_QR_Catalogo.png.
+
+PUBLICAR
+En repositorio público SERENA-PA2, actualizar index.html, script.js y style.css y añadir assets/qr-catalogo-serena.png. Se incluyen todos los archivos en el ZIP para facilitar carga. Conservar los archivos directamente en raíz y assets como subcarpeta. GitHub Pages continuará usando rama main / (root).
+
+PRUEBAS
+1) Inicio: observar/escANEAR QR con otro celular y confirmar que llega a #catalogo.
+2) Botón Asesoría: abrir panel, tocar ABRIR WHATSAPP y verificar que muestra mensaje para compartir. Sin destinatario configurado por SERENA.
+3) Enviar producto al carrito, ir a datos de envío y cambiar zona, comprobar total S/12 vs S/15 vs S/25. Elegir retiro para costo cero.
+
+Todas las ventas y tarifas siguen siendo demostraciones académicas.
