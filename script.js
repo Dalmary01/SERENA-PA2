@@ -16,7 +16,22 @@ const CATS={preparacion:'Preparación y protección facial',rostro:'Maquillaje d
 const fmt=n=>'S/ '+n.toFixed(2);
 const getProduct=id=>PRODUCTS.find(p=>p.id===Number(id));
 const loadCart=()=>{try{const v=JSON.parse(localStorage.getItem('serena_cart')||'{}');return v&&typeof v==='object'&&!Array.isArray(v)?v:{}}catch{return {}}};
-let cart=loadCart(); let category='todos'; let searchQuery='';let qty=1;let delivery='envio';let zone='lima';let customer={};let lastOrder=null;
+let cart=loadCart(); let category='todos'; let searchQuery='';let qty=1;let delivery='envio';let zone='lima';let customer={};let 
+let lastOrder = (() => {
+  try {
+    const saved = JSON.parse(sessionStorage.getItem('serena_last_order'));
+    return saved &&
+      typeof saved.number === 'string' &&
+      typeof saved.payment === 'string' &&
+      Array.isArray(saved.items) &&
+      Number.isFinite(saved.total) &&
+      Number.isFinite(saved.shipping) &&
+      typeof saved.zone === 'string'
+      ? saved : null;
+  } catch {
+    return null;
+  }
+})();
 const DELIVERY_ZONES={lima:{name:'Lima Metropolitana',fee:12},callao:{name:'Callao',fee:15},regiones:{name:'Otras ciudades del Perú',fee:25}};
 const cartEntries=()=>Object.entries(cart).map(([id,q])=>({p:getProduct(id),qty:Math.min(99,Number(q)||0)})).filter(r=>r.p&&r.qty>0);
 const subtotal=()=>cartEntries().reduce((sum,r)=>sum+r.p.price*r.qty,0);
