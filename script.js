@@ -16,7 +16,7 @@ const CATS={preparacion:'Preparación y protección facial',rostro:'Maquillaje d
 const fmt=n=>'S/ '+n.toFixed(2);
 const getProduct=id=>PRODUCTS.find(p=>p.id===Number(id));
 const loadCart=()=>{try{const v=JSON.parse(localStorage.getItem('serena_cart')||'{}');return v&&typeof v==='object'&&!Array.isArray(v)?v:{}}catch{return {}}};
-let cart=loadCart(); let category='todos'; let searchQuery='';let qty=1;let delivery='envio';let zone='lima';let customer={};let 
+let cart=loadCart(); let category='todos'; let searchQuery='';let qty=1;let delivery='envio';let zone='lima';let customer={};
 let lastOrder = (() => {
   try {
     const saved = JSON.parse(sessionStorage.getItem('serena_last_order'));
