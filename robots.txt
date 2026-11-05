@@ -1,1 +1,6 @@
 
+User-agent: *
+Allow: /SERENA-PA2/
+
+Sitemap: https://dalmary01.github.io/SERENA-PA2/sitemap.xml
+
